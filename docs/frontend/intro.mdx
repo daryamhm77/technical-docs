@@ -1,0 +1,39 @@
+---
+title: Frontend Intro
+description: Minimal overview of our frontend foundations
+---
+
+## Why It Exists
+
+We keep the UI fast, accessible, and predictable. This doc gives the least you need to align with existing patterns before contributing.
+
+## Project Skeleton
+
+- `src/` hosts everything; no logic lives outside it.
+- `components/` holds reusable pieces paired with styles and tests.
+- `pages/` defines routing surfaces; move domain logic into helpers or services.
+
+## Minimal Style Rules
+
+- Keep components single-purpose and under ~150 lines.
+- Prefer tokens or CSS variables over hard-coded colors.
+- Ensure every interactive element is keyboard reachable and announced with ARIA labels when needed.
+
+## Tooling
+
+- Bundled with Vite + TypeScript; run `npm run lint` before any PR.
+- Shared HTTP logic stays inside `src/services/` to keep fetch code uniform.
+
+## Quickstart
+
+1. `npm install`
+2. `npm run dev`
+3. Visit `http://localhost:5173`
+
+## Read Next
+
+- `docs/frontend/style-guide.mdx`
+- `docs/frontend/testing.mdx`
+
+Stay consistent, stay minimal. That’s the frontend contract.
+

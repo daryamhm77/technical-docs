@@ -1,0 +1,38 @@
+flowchart TD
+    tAbM6lLGggG2SJR_a58x_1[Point creation]
+    tAbM6lLGggG2SJR_a58x_3([Events comes])
+    tAbM6lLGggG2SJR_a58x_5[find nearest point to event]
+    tAbM6lLGggG2SJR_a58x_7[No]
+    tAbM6lLGggG2SJR_a58x_9[Yes]
+    tAbM6lLGggG2SJR_a58x_11{is distance betweenpointobj and eventless than ...}
+    tAbM6lLGggG2SJR_a58x_13[create new created pointStatus]
+    tAbM6lLGggG2SJR_a58x_15[add event to pointobj]
+    tAbM6lLGggG2SJR_a58x_17[update pointobj location, status and degree]
+    tAbM6lLGggG2SJR_a58x_18[add event andstatus and etc to pointobj]
+    tAbM6lLGggG2SJR_a58x_19[/get new point distance/]
+    tAbM6lLGggG2SJR_a58x_20[Settings]
+    tAbM6lLGggG2SJR_a58x_22[Fetch]
+    tAbM6lLGggG2SJR_a58x_23[point status]
+    tAbM6lLGggG2SJR_a58x_25[Store]
+    tAbM6lLGggG2SJR_a58x_27[create the point]
+    tAbM6lLGggG2SJR_a58x_29[points]
+    tAbM6lLGggG2SJR_a58x_31[Store]
+    tAbM6lLGggG2SJR_a58x_32([End])
+    MAxAezzLCUbpY12tnPM__3[Send to AI for POP]
+    MAxAezzLCUbpY12tnPM__6[Store]
+    tAbM6lLGggG2SJR_a58x_3 --> tAbM6lLGggG2SJR_a58x_5
+    tAbM6lLGggG2SJR_a58x_5 --> tAbM6lLGggG2SJR_a58x_11
+    tAbM6lLGggG2SJR_a58x_11 --> tAbM6lLGggG2SJR_a58x_13
+    tAbM6lLGggG2SJR_a58x_11 --> tAbM6lLGggG2SJR_a58x_15
+    tAbM6lLGggG2SJR_a58x_11 --> tAbM6lLGggG2SJR_a58x_19
+    tAbM6lLGggG2SJR_a58x_13 --> tAbM6lLGggG2SJR_a58x_18
+    tAbM6lLGggG2SJR_a58x_15 --> tAbM6lLGggG2SJR_a58x_17
+    tAbM6lLGggG2SJR_a58x_17 --> MAxAezzLCUbpY12tnPM__3
+    tAbM6lLGggG2SJR_a58x_19 --> tAbM6lLGggG2SJR_a58x_20
+    tAbM6lLGggG2SJR_a58x_13 --> tAbM6lLGggG2SJR_a58x_23
+    tAbM6lLGggG2SJR_a58x_27 --> MAxAezzLCUbpY12tnPM__3
+    tAbM6lLGggG2SJR_a58x_18 --> tAbM6lLGggG2SJR_a58x_27
+    tAbM6lLGggG2SJR_a58x_27 --> tAbM6lLGggG2SJR_a58x_29
+    MAxAezzLCUbpY12tnPM__3 --> tAbM6lLGggG2SJR_a58x_32
+    tAbM6lLGggG2SJR_a58x_17 --> tAbM6lLGggG2SJR_a58x_29
+
