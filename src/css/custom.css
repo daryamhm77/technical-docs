@@ -28,3 +28,9 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Role-based navigation hiding */
+.menu__list-item[style*="display: none"],
+.menu__link[style*="display: none"] {
+  display: none !important;
+}
