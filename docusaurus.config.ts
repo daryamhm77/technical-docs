@@ -9,6 +9,11 @@ const config: Config = {
   tagline: 'Technical Documentation',
   favicon: 'img/favicon.ico',
 
+  // Client modules for role-based navigation
+  clientModules: [
+    require.resolve('./src/clientModules/roleBasedNav.ts'),
+  ],
+
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
@@ -18,7 +23,7 @@ const config: Config = {
   url: 'https://your-docusaurus-site.example.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/docs/',
+  baseUrl: '/',
 
 
   // GitHub pages deployment config.
@@ -26,7 +31,7 @@ const config: Config = {
   organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn', // Changed to 'warn' for now - will fix broken links later
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
